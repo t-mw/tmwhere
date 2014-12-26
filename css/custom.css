@@ -1,0 +1,103 @@
+#wrap {
+	height: auto !important;
+    margin: 0 auto -60px;
+    min-height: 100%;
+}
+
+#push, #footer {
+	height:60px;
+}
+
+html, body {
+	height: 100%
+}
+
+a {
+  color: #0058AA;
+}
+
+.modal-body {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.tag_selector .btn {
+  font-size: 0.8em;
+  margin: 3px;
+}
+
+.tag_selector .active {
+  font-weight: bold;
+}
+
+.container .credit {
+	margin: 20px 0;
+}
+
+.clippedImage{
+	height: 200px;
+    position: relative;
+    z-index:1;
+    overflow:hidden; /*if you want to crop the image*/
+    margin-bottom: 20px;
+}
+
+.clippedImage:before{
+    z-index: -1;
+    position: absolute;
+    left:0;
+    bottom: -90px;
+	content: url("http://farm9.staticflickr.com/8515/8499464665_20f04a7143_b.jpg");
+	opacity:0.4;
+	filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+
+p.nice {
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.engArt .imgDiv {
+	margin: 5px 25px 5px 25px;
+}
+
+.engArt .finishedPieces {
+	float: left;
+	width: 100%;
+}
+
+.engArt .finishedPieces img{
+	margin: 10px 20px 10px 20px;
+}
+
+.media .pull-left {
+	padding-left: 20px;
+}
+
+.media .media-heading {
+	padding-left: 20px;
+}
+
+.media:first-child {
+	margin-top: 15px;
+}
+
+.media .btn-group {
+	margin-top: 10px;
+}
+
+h1 {
+	line-height: 50px;
+}
+
+img.small-social {
+  width: 25px;
+  height: 25px;
+}
