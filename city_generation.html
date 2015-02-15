@@ -28,8 +28,7 @@
         <div class="row">
           <div class="span12">
             <p class="nice">Since seeing the city generation from the shelved Introversion Software game "Subversion" <a href="https://www.youtube.com/watch?v=J30i0gABfS8">in action</a>, I've wanted to to try writing a basic procedural city generator myself. The developers followed a method described in <a href="https://graphics.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf">Parish and Müller's paper: Procedural Modelling of Cities (2001)</a>. The paper is well-written and accessible, apart from the authors' decision to define their algorithm as an L-system. The rules defined for the system are hard to interpret for a layperson and, as argued by <a href="http://mollyrocket.com/forums/viewtopic.php?t=730">one forum thread author</a>,<sup><a href="#fn1" id="ref1">1</a></sup> can be transformed into <a href="http://www.newton64.ca/blog/?p=747">an equivalent but more familiar form</a>. The demonstration above is the result of implementing this form of the algorithm with some of the 'global goals' and 'local goals' suggested by Parish and Müller. Pathfinding has also been added to this example, and can be seen when two separate road segments have been clicked.</p>
-            <p class="nice">Source for the main parts of my implementation can be found at: <a href="">Procedural City Generation Samples (CoffeeScript)</a>. <strong>Put dependencies on readme page.</strong></p>
-            <h2>Algorithm</h2>
+            <h2>Algorithm (<a href="https://gist.github.com/7dbe17dfe726999856f4">gist</a>)</h2>
             <p class="nice">The posts mentioned above do a good job of explaining the structure of the algorithm. The original pseudo-code from the linked forum thread is:
             <pre><code>
             initialize priority queue Q with a single entry: r(0, r0, q0)
@@ -61,6 +60,8 @@
             <p class="nice">I've used the venerable A* algorithm for pathfinding, with Amit Patel's <a href="http://www.redblobgames.com/pathfinding/a-star/introduction.html">excellent guide</a> as refresher material. During the generation process, each road segment is associated with those segments which connect directly to either end of it, allowing the network of segments to be traversed.</p>
             <p class="nice">The movement cost of each segment is the time to travel along it, a function of its length and the maximum allowed speed. Playing around with the pathfinding in the demonstration above, you may notice that the highway segments, which have a higher maximum speed, are preferred over normal road segments. The speed is in turn a function of the capacity of the road i.e. the traffic currently using the road, and although all roads are currently defined as empty, the pathfinder has the ability to avoid busier roads.</p>
             <sup id="fn1">1. The forum post is currently unavailable, but has been temporarily transferred <a href="https://mollyrocket.com/forums/molly_forum_730.html">here</a> in a fairly unreadable form. <a href="#ref1" title="Back to footnote 1."><small>↑</small></a></sup>
+            <h2>Pathfinding</h2>
+            <p class="nice">I've used the venerable A* algorithm for pathfinding, with Amit Patel's <a href="http://www.redblobgames.com/pathfinding/a-star/introduction.html">excellent guide</a> as refresher material. During the generation process, each road segment is associated with those segments which connect directly to either end of it, allowing the network of segments to be traversed.</p>
           </div>
         </div>
 
