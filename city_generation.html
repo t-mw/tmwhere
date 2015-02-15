@@ -19,7 +19,12 @@
 				<div class="span12 pagination-centered">
 					<h1><a href="index.html">Project Portfolio</a></h1>
           <h2>Procedural City Generation</h2>
-          <small>Click and hold to drag. Click on two locations to find a path.</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <p class="nice">Since seeing the city generation from the shelved Introversion Software game "Subversion" <a href="https://www.youtube.com/watch?v=J30i0gABfS8">in action</a>, I've wanted to to try writing a basic procedural city generator myself. The developers followed a method described in <a href="https://graphics.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf">Parish and Müller's paper: Procedural Modelling of Cities (2001)</a>. The paper is well-written and accessible, apart from the authors' decision to define their algorithm as an L-system. The rules defined for the system are hard to interpret for a layperson and, as argued by <a href="http://mollyrocket.com/forums/viewtopic.php?t=730">one forum thread author</a>,<sup><a href="#fn1" id="ref1">1</a></sup> can be transformed into <a href="http://www.newton64.ca/blog/?p=747">an equivalent but more familiar form</a>. The demonstration below is the result of implementing this form of the algorithm with some of the 'global goals' and 'local goals' suggested by Parish and Müller. Pathfinding has also been added to this example, and can be seen when two separate road segments have been clicked.</p>
+          <center><small>Click and hold to drag. Click on two locations to find a path.</small></center>
 				</div></div>
 
 				<div class="row">
@@ -27,8 +32,7 @@
 				</div>
         <div class="row">
           <div class="span12">
-            <p class="nice">Since seeing the city generation from the shelved Introversion Software game "Subversion" <a href="https://www.youtube.com/watch?v=J30i0gABfS8">in action</a>, I've wanted to to try writing a basic procedural city generator myself. The developers followed a method described in <a href="https://graphics.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf">Parish and Müller's paper: Procedural Modelling of Cities (2001)</a>. The paper is well-written and accessible, apart from the authors' decision to define their algorithm as an L-system. The rules defined for the system are hard to interpret for a layperson and, as argued by <a href="http://mollyrocket.com/forums/viewtopic.php?t=730">one forum thread author</a>,<sup><a href="#fn1" id="ref1">1</a></sup> can be transformed into <a href="http://www.newton64.ca/blog/?p=747">an equivalent but more familiar form</a>. The demonstration above is the result of implementing this form of the algorithm with some of the 'global goals' and 'local goals' suggested by Parish and Müller. Pathfinding has also been added to this example, and can be seen when two separate road segments have been clicked.</p>
-            <h2>Algorithm (<a href="https://gist.github.com/7dbe17dfe726999856f4">gist</a>)</h2>
+            <h3>Algorithm (<a href="https://gist.github.com/7dbe17dfe726999856f4">gist</a>)</h3>
             <p class="nice">The posts mentioned above do a good job of explaining the structure of the algorithm. The original pseudo-code from the linked forum thread is:
             <pre><code>
             initialize priority queue Q with a single entry: r(0, r0, q0)
@@ -42,26 +46,25 @@
                 foreach r(tj, rj, qj) produced by globalGoals(ri, qi)
                   add r(ti + 1 + tj, rj, qj) to Q
               }
-              </code></pre>
+            </code></pre>
             <p class="nice"><code>r</code> is a road segment with parameters: <code>ti</code> - the time delay until the segment is placed in the world, <code>ri</code> - the geometrical properties of the segment, and <code>qi</code> - any additional metadata associated with the segment. <code>Q</code> is a list of segments yet to be placed in the world. In each iteration of the algorithm the segment with the smallest <code>ti</code> is removed from <code>Q</code>. <code>localConstraints</code> checks the segment for compatibility with all previously placed segments and may modify its geometry if necessary, for example to join the end of the segment to a nearby junction.</p>
             <p class="nice">If the segment is found to be compatible, it is added to the list of placed segments <code>S</code>. The newly placed segment is then fed into <code>globalGoals</code> which decides what, if any, new segments should branch out from it in the future. The implementation of globalGoals is entirely up to the developer: I made the decision for roads to simply tend towards areas of high population density. The original authors added further constraints to create several distinctive categories of road patterns.</p>
             <p class="nice">The behaviour of the algorithm can be visualised by turning on the debug view in the demonstration above. The highlighted path shows the order that segments are placed. Segments can be seen branching out from the main highways, and merging with parallel areas of growth as dictated by the local constraints. The consequence of queueing the segments by <code>ti</code> can also be seen, causing the network to grow roughly uniformly across its circumference and leaving no dangling segment inactive for long.</p>
             <p class="nice">Coloured points on the debug view correspond to local constraints proposed by Parish and Müller (2001):
-            <ol>
-            <li style="color: #C00;">if "two streets intersect" then "generate a crossing".</li>
-            <li style="color: #0C0;">if "ends close to an existing crossing" then "extend street, to reach the crossing".</li>
-            <li style="color: #00C;">if "close to intersecting" then "extend street to form intersection".</li>
-            </ol></p>
-            <h2>Population Density</h2>
+              <ol>
+                <li style="color: #C00;">if "two streets intersect" then "generate a crossing".</li>
+                <li style="color: #0C0;">if "ends close to an existing crossing" then "extend street, to reach the crossing".</li>
+                <li style="color: #00C;">if "close to intersecting" then "extend street to form intersection".</li>
+              </ol>
+            </p>
+            <h3>Population Density</h3>
             <p class="nice">Three layers of simplex noise were combined to define the population density map. The resulting map has two purposes. One is to guide the forward extension of existing road segments; if a random deviation will reach a higher population than extending the original segment straight ahead, the extension will match that deviation. The second purpose of the population map is to determine when normal road segments should branch off from a highway - when the population along the highway meets a defined threshold.</p>
-            <h2>Building Placement</h2>
+            <h3>Building Placement</h3>
             <p class="nice">In the example above the <a href="http://www.metanetsoftware.com/technique/tutorialA.html#section2">separating axis theorem</a> is used for collision detection, specifically to disperse buildings among the road network. The initial position of each building is randomly selected. To determine the final position of a building it is moved away from any overlapping roads or existing buildings along the axis of minimum overlap. If the building is still not in the clear after a fixed number of iterations, it is discarded.</p>
-            <h2>Pathfinding</h2>
-            <p class="nice">I've used the venerable A* algorithm for pathfinding, with Amit Patel's <a href="http://www.redblobgames.com/pathfinding/a-star/introduction.html">excellent guide</a> as refresher material. During the generation process, each road segment is associated with those segments which connect directly to either end of it, allowing the network of segments to be traversed.</p>
+            <h3>Pathfinding</h3>
+            <p class="nice">The A* algorithm was used for pathfinding, with Amit Patel's <a href="http://www.redblobgames.com/pathfinding/a-star/introduction.html">excellent guide</a> as refresher material. During the generation process, each road segment is associated with those segments which connect directly to either end of it, allowing the network of segments to be traversed.</p>
             <p class="nice">The movement cost of each segment is the time to travel along it, a function of its length and the maximum allowed speed. Playing around with the pathfinding in the demonstration above, you may notice that the highway segments, which have a higher maximum speed, are preferred over normal road segments. The speed is in turn a function of the capacity of the road i.e. the traffic currently using the road, and although all roads are currently defined as empty, the pathfinder has the ability to avoid busier roads.</p>
             <sup id="fn1">1. The forum post is currently unavailable, but has been temporarily transferred <a href="https://mollyrocket.com/forums/molly_forum_730.html">here</a> in a fairly unreadable form. <a href="#ref1" title="Back to footnote 1."><small>↑</small></a></sup>
-            <h2>Pathfinding</h2>
-            <p class="nice">I've used the venerable A* algorithm for pathfinding, with Amit Patel's <a href="http://www.redblobgames.com/pathfinding/a-star/introduction.html">excellent guide</a> as refresher material. During the generation process, each road segment is associated with those segments which connect directly to either end of it, allowing the network of segments to be traversed.</p>
           </div>
         </div>
 
