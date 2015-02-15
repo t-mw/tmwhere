@@ -109,11 +109,11 @@ img.small-social {
 
 .road-gen #pixiContainer label {
   display: inline;
-  margin: 0 1em;
+  margin: 0 0.5em 0 1em;
 }
 
 .road-gen #pixiContainer input {
-  margin: 0;
+  margin: 0 1em 0 0;
 }
 
 .road-gen #pixiContainer {
