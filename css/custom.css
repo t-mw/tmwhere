@@ -119,3 +119,8 @@ img.small-social {
 .road-gen #pixiContainer {
   margin-bottom: 20px;
 }
+
+.hn-button {
+    bottom: 2px;
+    position:relative;
+}
