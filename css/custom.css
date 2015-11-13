@@ -98,6 +98,12 @@ p.nice {
 	margin-top: 10px;
 }
 
+.btn {
+  border-right: 1px #CCC solid;
+  border-bottom: 1px #CCC solid;
+  margin: 1px;
+}
+
 h1 {
 	line-height: 50px;
 }
