@@ -36,7 +36,7 @@ h1 a, h1 a:hover {
 }
 
 .container .credit {
-	margin: 20px 0;
+	margin: 10px 0 30px 0;
 }
 
 .clipped-image {
@@ -109,8 +109,16 @@ h1 {
 }
 
 img.small-social {
-  width: 25px;
-  height: 25px;
+  width: auto;
+  height: 24px;
+  margin: 0 10px;
+  opacity: .7;
+}
+
+img.small-social:hover {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .road-gen #pixiContainer label {
