@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <div class="tiles">
+    {{ .Content -}}
+    {{ $year := 0 -}}
+    {{ range $.Site.Data.items.items -}}
+    <div class="tile">
+      <h2><a href="{{.link1}}">{{ .title }}</a></h2>
+      <h4>{{ if .link2 }}<span class="code-link">[<a href="{{ .link2 }}">{{ .link2_text }}</a>]</span>{{ end }}{{ .year }}</h4>
+      <a class="image" href="{{.link1}}">
+        {{ $title := .title -}}
+        {{ $page := $.Site.GetPage .slug -}}
+        {{ $thumb := or ($page.Resources.GetMatch "thumb.*") ($page.Resources.GetMatch "1.*") -}}
+        {{ with $thumb -}}
+          {{ $width := 300 -}}
+          {{ $height := 200 -}}
+          {{ $resized1x := .Fill (printf "%vx%v Top Gaussian q75" $width $height) -}}
+          {{ $resized2x := .Fill (printf "%vx%v Top Gaussian q75" (mul $width 2) (mul $height 2)) -}}
+          <img src="{{$resized1x.RelPermalink}}" srcset="{{$resized1x.RelPermalink}} 1x, {{$resized2x.RelPermalink}} 2x" alt="{{$title}}" />
+        {{ end -}}
+      </a>
+      <p class="description">{{ .description | markdownify }}</p>
+    </div>
+    {{ end -}}
+  </div>
+{{ end -}}

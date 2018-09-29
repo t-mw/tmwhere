@@ -1,0 +1,22 @@
+ol li:nth-child(1) {
+  color: #c00;
+}
+
+ol li:nth-child(2) {
+  color: #0c0;
+}
+
+ol li:nth-child(3) {
+  color: #00c;
+}
+
+#pixiContainer {
+  margin: 0 auto 20px auto;
+  cursor: inherit;
+  font-size: 0.8em;
+}
+
+#pixiContainer label {
+  display: inline;
+  margin: 0 0.5em 0 1em;
+}

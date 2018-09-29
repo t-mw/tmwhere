@@ -1,0 +1,7 @@
+baseURL = "//www.tmwhere.com/"
+languageCode = "en-us"
+title = "tmwhere"
+theme = "tmwhere"
+disableHugoGeneratorInject = true
+uglyurls = true
+disableKinds = ["RSS"]

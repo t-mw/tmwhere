@@ -1,0 +1,154 @@
+[[items]]
+title = "Space Opera"
+year = "2018"
+slug = "space-opera"
+images = []
+link1 = "https://ldjam.com/events/ludum-dare/42/space-opera"
+link1_text = "Play"
+link2 = "https://github.com/t-mw/space-opera"
+link2_text = "Code"
+description = "Ludum Dare 42 competition submission."
+
+[[items]]
+title = "Need for Seeds"
+year = "2018"
+slug = "need-for-seeds"
+images = []
+link1 = "https://ldjam.com/events/ludum-dare/41/need-for-seeds"
+link1_text = "Play"
+link2 = "https://github.com/t-mw/need-for-seeds"
+link2_text = "Code"
+description = "Ludum Dare 41 and Lisp Game Jam 2018 competition submission."
+
+[[items]]
+title = "Herbarium"
+year = "2017"
+slug = "herbarium"
+images = []
+link1 = "https://ldjam.com/events/ludum-dare/38/herbarium"
+link1_text = "Play"
+link2 = "https://github.com/t-mw/herbarium"
+link2_text = "Code"
+description = "Ludum Dare 38 competition submission."
+
+[[items]]
+title = "City Generation"
+year = "2015"
+slug = "city_generation"
+images = []
+link1 = "city_generation.html"
+link1_text = "Read"
+link2 = "https://github.com/t-mw/citygen"
+link2_text = "Code"
+description = "JavaScript implementation of a procedural city generation algorithm."
+
+[[items]]
+title = "BotaniTours"
+year = "2014"
+slug = "botanitours"
+images = ["1.png", "2.png", "3.png"]
+link1 = "http://groups.inf.ed.ac.uk/BotaniTours"
+link1_text = "Visit"
+link2 = ""
+link2_text = ""
+description = "Plant and garden map produced for the University of Edinburgh School of Informatics."
+
+[[items]]
+title = "Career Explorer"
+year = "2013"
+slug = "career-explorer"
+images = []
+link1 = "http://www.toolkit.careers.ed.ac.uk/careerexplorer/"
+link1_text = "Visit"
+link2 = ""
+link2_text = ""
+description = "Self-assessment produced for the University of Edinburgh Careers Service."
+
+[[items]]
+title = "Networking Game"
+year = "2013"
+slug = "networking-game"
+images = []
+link1 = "http://www.careerconnect.ed.ac.uk/networking-game/"
+link1_text = "Visit"
+link2 = ""
+link2_text = ""
+description = "Game-informed simulation produced for the University of Edinburgh Careers Service."
+
+[[items]]
+title = "Terrain Generation"
+year = "2013"
+slug = "terrain-gen"
+images = []
+link1 = "https://bitbucket.org/bitbucketmw/constantsorrow/src/2e112c03ed5106c8da1ad4cda916214ad7ecb207/src/voronoi_map.cpp"
+link1_text = "Code"
+link2 = ""
+link2_text = ""
+description = "Original C++ implementation of a [procedural map generation algorithm]( http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/). Ported to the Unity engine."
+
+
+[[items]]
+title = "Man of Constant Sorrow"
+year = "2013"
+slug = "constant-sorrow"
+images = []
+link1 = "https://www.youtube.com/watch?v=_We57lTnSi8"
+link1_text = "Video"
+link2 = "https://bitbucket.org/bitbucketmw/cutecoffeebean"
+link2_text = "Code"
+description = "Game about wood-chopping completed in 36 hours with a team."
+
+[[items]]
+title = "Engineering Art"
+year = "2013"
+slug = "engart"
+images = []
+link1 = "https://www.flickr.com/photos/93487716@N04/albums/72157632838424548"
+link1_text = "Photos"
+link2 = ""
+link2_text = ""
+description = "Sculptures produced over the course of a week with a small team of sculptors and engineers."
+
+[[items]]
+title = "Meternal"
+year = "2013"
+slug = "meternal"
+images = []
+link1 = "https://www.youtube.com/watch?v=yatJ5bp3ilw"
+link1_text = "Video"
+link2 = "https://bitbucket.org/gamejamhg/meternal/src/"
+link2_text = "Code"
+description = "Eperimental game completed in 48 hours with a team."
+
+[[items]]
+title = "Commandos WIP"
+year = "2012"
+slug = "commandos"
+images = []
+link1 = "https://www.youtube.com/watch?v=zp3O5-RVwtY"
+link1_text = "Video"
+link2 = ""
+link2_text = ""
+description = "'Commandos' inspired game prototype."
+
+[[items]]
+title = "ZooSpeak"
+year = "2012"
+slug = "zoospeak"
+images = []
+link1 = "https://www.youtube.com/watch?v=DZJj5ChXlEk"
+link1_text = "Video"
+link2 = "https://bitbucket.org/gamejamhg/zoospeak/src"
+link2_text = "Code"
+description = "Puzzle game made for the Microsoft Imagine Cup 2012 with a small team."
+
+[[items]]
+title = "GameDevSoc Jam"
+year = "2012"
+slug = "gamedevsoc-jam"
+images = []
+link1 = "https://www.youtube.com/watch?v=D56iHNo7V4k"
+link1_text = "Video"
+link2 = ""
+link2_text = ""
+description = "Two player game played over a network completed in 48 hours with a small team."
