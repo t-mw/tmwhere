@@ -1,4 +1,4 @@
-baseURL = "//www.tmwhere.com/"
+baseURL = "https://www.tmwhere.com/"
 languageCode = "en-us"
 title = "tmwhere"
 theme = "tmwhere"
