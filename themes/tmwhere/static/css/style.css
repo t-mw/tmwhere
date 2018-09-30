@@ -47,9 +47,8 @@ table {
 }
 
 h1 {
-  color: #888;
-  font-size: 1.6em;
-  margin-bottom: 50px;
+  font-size: 1.4em;
+  margin-bottom: 5px;
 }
 
 h2 {
@@ -101,8 +100,14 @@ a {
   border-top: 1px solid #ddd;
   padding-top: 10px;
   margin: 0;
-  width: 100px;
+  width: 200px;
   font-size: 0.8em;
+  text-transform: lowercase;
+}
+
+.contact a.u-url {
+  text-decoration: none;
+  color: #555;
 }
 
 p {
@@ -149,7 +154,7 @@ ol, ul {
   display: inline-block;
   width: 300px;
   vertical-align: top;
-  margin: 50px 50px 80px 50px;
+  margin: 100px 50px;
 }
 
 .tile .description {
