@@ -6,7 +6,7 @@ images = []
 link1 = "https://ldjam.com/events/ludum-dare/42/space-opera"
 link1_text = "Play"
 link2 = "https://github.com/t-mw/space-opera"
-link2_text = "Code"
+link2_text = "code"
 description = "Ludum Dare 42 competition submission."
 
 [[items]]
@@ -17,7 +17,7 @@ images = []
 link1 = "https://ldjam.com/events/ludum-dare/41/need-for-seeds"
 link1_text = "Play"
 link2 = "https://github.com/t-mw/need-for-seeds"
-link2_text = "Code"
+link2_text = "code"
 description = "Ludum Dare 41 and Lisp Game Jam 2018 competition submission."
 
 [[items]]
@@ -28,7 +28,7 @@ images = []
 link1 = "https://ldjam.com/events/ludum-dare/38/herbarium"
 link1_text = "Play"
 link2 = "https://github.com/t-mw/herbarium"
-link2_text = "Code"
+link2_text = "code"
 description = "Ludum Dare 38 competition submission."
 
 [[items]]
@@ -39,7 +39,7 @@ images = []
 link1 = "city_generation.html"
 link1_text = "Read"
 link2 = "https://github.com/t-mw/citygen"
-link2_text = "Code"
+link2_text = "code"
 description = "JavaScript implementation of a procedural city generation algorithm."
 
 [[items]]
@@ -81,7 +81,7 @@ year = "2013"
 slug = "terrain-gen"
 images = []
 link1 = "https://bitbucket.org/bitbucketmw/constantsorrow/src/2e112c03ed5106c8da1ad4cda916214ad7ecb207/src/voronoi_map.cpp"
-link1_text = "Code"
+link1_text = "code"
 link2 = ""
 link2_text = ""
 description = "Original C++ implementation of a [procedural map generation algorithm]( http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/). Ported to the Unity engine."
@@ -95,7 +95,7 @@ images = []
 link1 = "https://www.youtube.com/watch?v=_We57lTnSi8"
 link1_text = "Video"
 link2 = "https://bitbucket.org/bitbucketmw/cutecoffeebean"
-link2_text = "Code"
+link2_text = "code"
 description = "Game about wood-chopping completed in 36 hours with a team."
 
 [[items]]
@@ -117,7 +117,7 @@ images = []
 link1 = "https://www.youtube.com/watch?v=yatJ5bp3ilw"
 link1_text = "Video"
 link2 = "https://bitbucket.org/gamejamhg/meternal/src/"
-link2_text = "Code"
+link2_text = "code"
 description = "Eperimental game completed in 48 hours with a team."
 
 [[items]]
@@ -139,7 +139,7 @@ images = []
 link1 = "https://www.youtube.com/watch?v=DZJj5ChXlEk"
 link1_text = "Video"
 link2 = "https://bitbucket.org/gamejamhg/zoospeak/src"
-link2_text = "Code"
+link2_text = "code"
 description = "Puzzle game made for the Microsoft Imagine Cup 2012 with a small team."
 
 [[items]]
