@@ -4,7 +4,6 @@ date = 2015-02-15T09:30:19+00:00
 codelink = "https://github.com/t-mw/citygen"
 js = ["pixi-1.6.0", "lodash-2.4.1", "react-0.11.1", "city_generation"]
 css = "city_generation"
-type = "article"
 +++
 
 Click and hold to navigate. Click on two locations to find a path.
@@ -15,7 +14,7 @@ Since seeing the city generation from the shelved Introversion Software game "Su
 
 The demo above is the result of implementing this form of the algorithm with some of the 'global goals' and 'local goals' suggested by Parish and Müller. Support for pathfinding between two locations on the road network has also been added.
 
-### Algorithm
+## Algorithm
 
 The post mentioned above do a good job of explaining the structure of the algorithm. Reading the pseudo-code:
 
@@ -45,15 +44,15 @@ Coloured points on the debug view correspond to local constraints proposed by Pa
 2. if "ends close to an existing crossing" then "extend street, to reach the crossing".
 3. if "close to intersecting" then "extend street to form intersection".
 
-### Population Density
+## Population Density
 
 Three layers of simplex noise were combined to define the population density map. The resulting map has two purposes. One is to guide the forward extension of existing road segments; if a random deviation will reach a higher population than extending the original segment straight ahead, the extension will match that deviation. The second purpose of the population map is to determine when normal road segments should branch off from a highway - when the population along the highway meets a defined threshold.
 
-### Building Placement
+## Building Placement
 
 In the example above the [separating axis theorem](http://www.metanetsoftware.com/technique/tutorialA.html#section2) is used for collision detection, specifically to disperse buildings among the road network. The initial position of each building is randomly selected. To determine the final position of a building it is moved away from any overlapping roads or existing buildings along the axis of minimum overlap. If the building is still not in the clear after a fixed number of iterations, it is discarded.
 
-### Pathfinding
+## Pathfinding
 
 The A\* algorithm is used for pathfinding. During the generation process, each road segment is associated with those segments which connect directly to either end of it, allowing the network of segments to be traversed.
 

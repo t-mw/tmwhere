@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <div class="{{ .Type }}">
+  <article>
     {{ $codelink := .Params.codelink -}}
-    <h2>{{ .Title }}{{ with $codelink }} <span class="code-link">[<a href="{{ . }}">code</a>]</span>{{ end }}</h2>
+    <h1>{{ .Title }}{{ with $codelink }} <span class="code-link">[<a href="{{ . }}">code</a>]</span>{{ end }}</h1>
     {{ .Content -}}
-  </div>
+  </article>
 {{ end }}

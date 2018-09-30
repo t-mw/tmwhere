@@ -1,17 +1,19 @@
-<ul class="contact h-card">
-  <li>
-    <h1><a href="{{ $.Site.BaseURL }}" class="p-name u-url" rel="me">Tobias Mansfield-Williams</a></h1>
-  </li>
-  <li>
-    <a href="mailto:contact@tmwhere.com" class="u-email" rel="me">contact@tmwhere.com</a>
-  </li>
-  <li>
-    <a href="https://github.com/t-mw" rel="me">github</a>
-  </li>
-  <li>
-    <a href="https://twitter.com/tobmansf" rel="me">twitter</a>
-  </li>
-</ul>
+<footer>
+  <ul class="contact h-card">
+    <li>
+      <h1><a href="{{ $.Site.BaseURL }}" class="p-name u-url" rel="me">Tobias Mansfield-Williams</a></h1>
+    </li>
+    <li>
+      <a href="mailto:contact@tmwhere.com" class="u-email" rel="me">contact@tmwhere.com</a>
+    </li>
+    <li>
+      <a href="https://github.com/t-mw" rel="me">github</a>
+    </li>
+    <li>
+      <a href="https://twitter.com/tobmansf" rel="me">twitter</a>
+    </li>
+  </ul>
+</footer>
 {{ range .Params.js -}}
 <script src="{{ $.Site.BaseURL }}js/{{ . }}.js"></script>
 {{ end -}}
