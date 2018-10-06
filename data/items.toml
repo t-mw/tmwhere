@@ -32,6 +32,17 @@ link2_text = "code"
 description = "Ludum Dare 38 competition submission."
 
 [[items]]
+title = "Life Drawing"
+year = "2016"
+slug = "life-drawing"
+images = []
+link1 = "life-drawing.html"
+link1_text = "View"
+link2 = ""
+link2_text = ""
+description = "Pencil and charcoal drawings."
+
+[[items]]
 title = "City Generation"
 year = "2015"
 slug = "city_generation"
