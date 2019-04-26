@@ -1,4 +1,16 @@
 [[items]]
+title = "Superstar"
+year = "2018"
+slug = "superstar"
+images = []
+link1 = "https://ldjam.com/events/ludum-dare/43/superstar"
+link1_text = "Play"
+link2 = "https://github.com/t-mw/superstar"
+link2_text = "code"
+description = "Ludum Dare 43 competition submission."
+tech = "PICO-8"
+
+[[items]]
 title = "Space Opera"
 year = "2018"
 slug = "space-opera"
