@@ -8,6 +8,7 @@ link1_text = "Play"
 link2 = "https://github.com/t-mw/space-opera"
 link2_text = "code"
 description = "Ludum Dare 42 competition submission."
+tech = "Rust, WASM, raylib"
 
 [[items]]
 title = "Need for Seeds"
@@ -19,6 +20,7 @@ link1_text = "Play"
 link2 = "https://github.com/t-mw/need-for-seeds"
 link2_text = "code"
 description = "Ludum Dare 41 and Lisp Game Jam 2018 competition submission."
+tech = "Urn, Love2D"
 
 [[items]]
 title = "Herbarium"
@@ -30,6 +32,7 @@ link1_text = "Play"
 link2 = "https://github.com/t-mw/herbarium"
 link2_text = "code"
 description = "Ludum Dare 38 competition submission."
+tech = "PICO-8"
 
 [[items]]
 title = "Life Drawing"
@@ -51,7 +54,8 @@ link1 = "city_generation.html"
 link1_text = "Read"
 link2 = "https://github.com/t-mw/citygen"
 link2_text = "code"
-description = "JavaScript implementation of a procedural city generation algorithm."
+description = "Implementation of a procedural city generation algorithm."
+tech = "CoffeeScript"
 
 [[items]]
 title = "BotaniTours"
@@ -63,6 +67,7 @@ link1_text = "Visit"
 link2 = ""
 link2_text = ""
 description = "Plant and garden map produced for the University of Edinburgh School of Informatics."
+tech = "PHP, PostGIS, Leaflet"
 
 [[items]]
 title = "Career Explorer"
@@ -74,6 +79,7 @@ link1_text = "Visit"
 link2 = ""
 link2_text = ""
 description = "Self-assessment produced for the University of Edinburgh Careers Service."
+tech = "PHP"
 
 [[items]]
 title = "Networking Game"
@@ -85,6 +91,7 @@ link1_text = "Visit"
 link2 = ""
 link2_text = ""
 description = "Game-informed simulation produced for the University of Edinburgh Careers Service."
+tech = "PHP"
 
 [[items]]
 title = "Terrain Generation"
@@ -96,6 +103,7 @@ link1_text = "code"
 link2 = ""
 link2_text = ""
 description = "Original C++ implementation of a [procedural map generation algorithm]( http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/). Ported to the Unity engine."
+tech = "C++, Unity"
 
 
 [[items]]
@@ -108,6 +116,7 @@ link1_text = "Video"
 link2 = "https://bitbucket.org/bitbucketmw/cutecoffeebean"
 link2_text = "code"
 description = "Game about wood-chopping completed in 36 hours with a team."
+tech = "Unity"
 
 [[items]]
 title = "Engineering Art"
@@ -129,7 +138,8 @@ link1 = "https://www.youtube.com/watch?v=yatJ5bp3ilw"
 link1_text = "Video"
 link2 = "https://bitbucket.org/gamejamhg/meternal/src/"
 link2_text = "code"
-description = "Eperimental game completed in 48 hours with a team."
+description = "Experimental game completed in 48 hours with a team."
+tech = "Unity"
 
 [[items]]
 title = "Commandos WIP"
@@ -141,6 +151,7 @@ link1_text = "Video"
 link2 = ""
 link2_text = ""
 description = "'Commandos' inspired game prototype."
+tech = "Unity"
 
 [[items]]
 title = "ZooSpeak"
@@ -152,6 +163,7 @@ link1_text = "Video"
 link2 = "https://bitbucket.org/gamejamhg/zoospeak/src"
 link2_text = "code"
 description = "Puzzle game made for the Microsoft Imagine Cup 2012 with a small team."
+tech = "C#, XNA"
 
 [[items]]
 title = "GameDevSoc Jam"
@@ -163,3 +175,4 @@ link1_text = "Video"
 link2 = ""
 link2_text = ""
 description = "Two player game played over a network completed in 48 hours with a small team."
+tech = "Unity"
