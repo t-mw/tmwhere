@@ -2,4 +2,3 @@
 hugo
 tidy -im -w 160 --tidy-mark no public/*.html
 rm public/**/{thumb,1,2,3}.*
-rm -r public/downloads
