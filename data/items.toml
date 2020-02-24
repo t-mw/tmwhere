@@ -1,4 +1,16 @@
 [[items]]
+title = "She's Coming"
+year = "2020"
+slug = "shes-coming"
+images = []
+link1 = "https://sasharb.itch.io/shescoming"
+link1_text = "Play"
+link2 = "https://github.com/t-mw/shes-coming"
+link2_text = "code"
+description = "Global Game Jam 2020 team submission."
+tech = "Unity"
+
+[[items]]
 title = "Superstar"
 year = "2018"
 slug = "superstar"
@@ -7,7 +19,7 @@ link1 = "https://ldjam.com/events/ludum-dare/43/superstar"
 link1_text = "Play"
 link2 = "https://github.com/t-mw/superstar"
 link2_text = "code"
-description = "Ludum Dare 43 competition submission."
+description = "Ludum Dare 43 competition solo submission."
 tech = "PICO-8"
 
 [[items]]
@@ -19,7 +31,7 @@ link1 = "https://ldjam.com/events/ludum-dare/42/space-opera"
 link1_text = "Play"
 link2 = "https://github.com/t-mw/space-opera"
 link2_text = "code"
-description = "Ludum Dare 42 competition submission."
+description = "Ludum Dare 42 competition solo submission."
 tech = "Rust, WASM, raylib"
 
 [[items]]
@@ -31,7 +43,7 @@ link1 = "https://ldjam.com/events/ludum-dare/41/need-for-seeds"
 link1_text = "Play"
 link2 = "https://github.com/t-mw/need-for-seeds"
 link2_text = "code"
-description = "Ludum Dare 41 and Lisp Game Jam 2018 competition submission."
+description = "Ludum Dare 41 and Lisp Game Jam 2018 competition solo submission."
 tech = "Urn, Love2D"
 
 [[items]]
@@ -43,7 +55,7 @@ link1 = "https://ldjam.com/events/ludum-dare/38/herbarium"
 link1_text = "Play"
 link2 = "https://github.com/t-mw/herbarium"
 link2_text = "code"
-description = "Ludum Dare 38 competition submission."
+description = "Ludum Dare 38 competition solo submission."
 tech = "PICO-8"
 
 [[items]]
