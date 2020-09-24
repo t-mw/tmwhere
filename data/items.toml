@@ -68,6 +68,7 @@ link1_text = "View"
 link2 = ""
 link2_text = ""
 description = "Pencil and charcoal drawings."
+tech = "Hands"
 
 [[items]]
 title = "City Generation"
