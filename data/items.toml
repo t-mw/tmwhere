@@ -149,8 +149,8 @@ slug = "constant-sorrow"
 images = []
 link1 = "https://www.youtube.com/watch?v=_We57lTnSi8"
 link1_text = "Video"
-link2 = "https://bitbucket.org/bitbucketmw/cutecoffeebean"
-link2_text = "code"
+link2 = ""
+link2_text = ""
 description = "Game about wood-chopping completed in 36 hours with a team."
 tech = "Unity"
 
@@ -172,8 +172,8 @@ slug = "meternal"
 images = []
 link1 = "https://www.youtube.com/watch?v=yatJ5bp3ilw"
 link1_text = "Video"
-link2 = "https://bitbucket.org/gamejamhg/meternal/src/"
-link2_text = "code"
+link2 = ""
+link2_text = ""
 description = "Experimental game completed in 48 hours with a team."
 tech = "Unity"
 
@@ -196,8 +196,8 @@ slug = "zoospeak"
 images = []
 link1 = "https://www.youtube.com/watch?v=DZJj5ChXlEk"
 link1_text = "Video"
-link2 = "https://bitbucket.org/gamejamhg/zoospeak/src"
-link2_text = "code"
+link2 = ""
+link2_text = ""
 description = "Puzzle game made for the Microsoft Imagine Cup 2012 with a small team."
 tech = "C#, XNA"
 
