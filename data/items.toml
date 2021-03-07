@@ -8,7 +8,7 @@ link1_text = "Play"
 link2 = "https://github.com/t-mw/shes-coming"
 link2_text = "code"
 description = "Global Game Jam 2020 team submission."
-tech = "Unity"
+tech = "C#, Unity"
 
 [[items]]
 title = "Slice Tool"
@@ -177,7 +177,7 @@ link1_text = "Video"
 link2 = ""
 link2_text = ""
 description = "Game about wood-chopping completed in 36 hours with a team."
-tech = "Unity"
+tech = "C#, Unity"
 
 [[items]]
 title = "Engineering Art"
@@ -200,7 +200,7 @@ link1_text = "Video"
 link2 = ""
 link2_text = ""
 description = "Experimental game completed in 48 hours with a team."
-tech = "Unity"
+tech = "C#, Unity"
 
 [[items]]
 title = "Commandos WIP"
@@ -212,7 +212,7 @@ link1_text = "Video"
 link2 = ""
 link2_text = ""
 description = "'Commandos' inspired game prototype."
-tech = "Unity"
+tech = "C#, Unity"
 
 [[items]]
 title = "ZooSpeak"
@@ -236,4 +236,4 @@ link1_text = "Video"
 link2 = ""
 link2_text = ""
 description = "Two player game played over a network completed in 48 hours with a small team."
-tech = "Unity"
+tech = "C#, Unity"
