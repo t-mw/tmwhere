@@ -11,6 +11,30 @@ description = "Global Game Jam 2020 team submission."
 tech = "Unity"
 
 [[items]]
+title = "Slice Tool"
+year = "2019"
+slug = "slice-tool"
+images = []
+link1 = "https://youtu.be/gnch_gCGe5A?t=63s"
+link1_text = "Video"
+link2 = ""
+link2_text = ""
+description = "Interactive 3D widget developed for the ArcGIS API for JavaScript."
+tech = "WebGL, TypeScript"
+
+[[items]]
+title = "Transform Tool"
+year = "2019"
+slug = "transform-tool"
+images = []
+link1 = "https://youtu.be/QsqAr4VVpZ0?t=192s"
+link1_text = "Video"
+link2 = ""
+link2_text = ""
+description = "Interactive 3D widget developed for the ArcGIS API for JavaScript."
+tech = "WebGL, TypeScript"
+
+[[items]]
 title = "Superstar"
 year = "2018"
 slug = "superstar"
