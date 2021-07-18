@@ -203,6 +203,17 @@ description = "Experimental game completed in 48 hours with a team."
 tech = "C#, Unity"
 
 [[items]]
+title = "Blesta"
+year = "2012"
+slug = "blesta"
+images = []
+link1 = "https://blesta.bandcamp.com"
+link1_text = "Listen"
+link2 = ""
+link2_text = ""
+description = "Electronic music project."
+
+[[items]]
 title = "Commandos WIP"
 year = "2012"
 slug = "commandos"
@@ -237,3 +248,25 @@ link2 = ""
 link2_text = ""
 description = "Two player game played over a network completed in 48 hours with a small team."
 tech = "C#, Unity"
+
+[[items]]
+title = "Illoper"
+year = "2011"
+slug = "illoper"
+images = []
+link1 = "https://illoper.bandcamp.com"
+link1_text = "Listen"
+link2 = ""
+link2_text = ""
+description = "Electronic music project."
+
+[[items]]
+title = "Dobias"
+year = "2011"
+slug = "dobias"
+images = []
+link1 = "https://www.youtube.com/watch?v=YNNXYWkJ91I"
+link1_text = "Listen"
+link2 = ""
+link2_text = ""
+description = "Music project."
