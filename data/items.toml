@@ -56,7 +56,7 @@ link1_text = "Play"
 link2 = "https://github.com/t-mw/space-opera"
 link2_text = "code"
 description = "Ludum Dare 42 competition solo submission."
-tech = "Rust, WASM, raylib"
+tech = "Rust, Wasm, raylib"
 
 [[items]]
 title = "Need for Seeds"
