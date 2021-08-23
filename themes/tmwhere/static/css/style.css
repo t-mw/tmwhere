@@ -105,7 +105,7 @@ article a:visited {
   text-transform: lowercase;
 }
 
-.contact a.u-url {
+.contact a.p-name {
   text-decoration: none;
   color: #555;
 }
