@@ -4,13 +4,12 @@
     <h1>{{ .Title }}{{ with $codelink }} <span class="code-link">[<a href="{{ . }}">code</a>]</span>{{ end }}</h1>
     {{ .Content -}}
     <section class="gallery">
-	    {{ $page := $.Site.GetPage .Params.slug -}}
-	    {{ range ($page.Resources.Match "*-*.*") -}}
-	      {{ $resized := .Fit "600x600 Top Gaussian q75" -}}
-	      <a href="{{.RelPermalink}}">
-		      <img src="{{$resized.RelPermalink}}" />
-		    </a>
-	    {{ end -}}
-	  </section>
+        {{ range (.Resources.Match "*-*.*") -}}
+        {{ $resized := .Fit "600x600 Top Gaussian q75" -}}
+        <a href="{{.RelPermalink}}">
+            <img src="{{$resized.RelPermalink}}" />
+        </a>
+        {{ end }}
+    </section>
   </article>
 {{ end }}
