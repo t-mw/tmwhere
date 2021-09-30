@@ -8,7 +8,9 @@ css = "city_generation"
 
 Click and hold to navigate. Click on two locations to find a path.
 
+{{< rawhtml >}}
 <div id="pixiContainer" aria-label="JavaScript demo"></div>
+{{< /rawhtml >}}
 
 Since seeing the city generation from the shelved Introversion Software game "Subversion" [in action](https://www.youtube.com/watch?v=J30i0gABfS8), I've wanted to to try writing a basic procedural city generator myself. The developers followed a method described in [Parish and Müller's paper: Procedural Modelling of Cities (2001)](https://graphics.ethz.ch/Downloads/Publications/Papers/2001/p_Par01.pdf). The paper is well-written and accessible, however the rules defined for the algorithm (defined as an [L-system](https://en.wikipedia.org/wiki/L-system)) are hard to interpret for a layperson and, as argued [here](http://nothings.org/gamedev/l_systems.html), can be transformed into an equivalent but more familiar form.
 
