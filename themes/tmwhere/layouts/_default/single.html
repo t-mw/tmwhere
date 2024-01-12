@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article>
+  <article class="{{ anchorize .Title }}">
     {{ $codelink := .Params.codelink -}}
     <h1>{{ .Title }}{{ with $codelink }} <span class="code-link">[<a href="{{ . }}">code</a>]</span>{{ end }}</h1>
     {{ .Content -}}
