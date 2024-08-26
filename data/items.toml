@@ -1,4 +1,29 @@
 [[items]]
+title = "Illoper"
+year = "2011-present"
+slug = "illoper"
+images = []
+link1 = "https://www.soundcloud.com/illoper"
+link1_text = "Listen"
+link2 = ""
+link2_text = ""
+description = "Electronic music project."
+
+
+[[items]]
+title = "Brotato: Abyssal Terrors"
+year = "2024"
+slug = "brotato"
+images = []
+link1 = "https://www.youtube.com/watch?v=rn_9djqZZVg"
+link1_text = "Video"
+link2 = ""
+link2_text = ""
+description = "Implementation of local co-op and production of trailer soundtrack."
+tech = "Godot"
+
+
+[[items]]
 title = "Pen People"
 year = "2021"
 slug = "pen-people"
@@ -260,17 +285,6 @@ link2 = ""
 link2_text = ""
 description = "Two player game played over a network completed in 48 hours with a small team."
 tech = "C#, Unity"
-
-[[items]]
-title = "Illoper"
-year = "2011"
-slug = "illoper"
-images = []
-link1 = "https://www.soundcloud.com/illoper"
-link1_text = "Listen"
-link2 = ""
-link2_text = ""
-description = "Electronic music project."
 
 [[items]]
 title = "Dobias"

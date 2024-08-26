@@ -1,5 +1,3 @@
-*** TODO add Brotato DLC trailer music
-*** TODO add Brotato coop support
 *** TODO add "The Ship" JS game
 *** TODO add emscripten planet generator
 *** TODO add thesis
