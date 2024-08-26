@@ -1,5 +1,5 @@
 +++
-title = "Links"
+title = "links"
 date = 2024-01-12T00:00:00+00:00
 hidetitle = true
 +++

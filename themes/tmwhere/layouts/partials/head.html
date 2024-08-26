@@ -1,6 +1,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style.css" />
     {{ with .Params.css -}}
     <link rel="stylesheet" type="text/css" href="{{ $.Site.BaseURL }}css/{{ . }}.css" />
     {{ end -}}
+    <link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}posts/index.xml" title="{{ .Site.Title }}">
