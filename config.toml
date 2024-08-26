@@ -3,5 +3,13 @@ languageCode = "en-us"
 title = "tmwhere"
 theme = "tmwhere"
 disableHugoGeneratorInject = true
-uglyurls = true
 disableKinds = ["RSS"]
+[menus]
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+    weight = 20

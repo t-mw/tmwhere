@@ -59,6 +59,10 @@ h4 {
   margin-bottom: 5px;
 }
 
+a {
+  text-decoration-style: dotted;
+}
+
 h1 a, h2 a, h3 a, h4 a {
   color: inherit;
   text-decoration: none;
@@ -70,14 +74,14 @@ button {
 
 article h1 {
   font-size: 1.5em;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 22px;
 }
 
 article h2 {
   font-size: 1.3em;
   margin-top: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 a {
@@ -88,8 +92,28 @@ article a:visited {
   color: #8888cc;
 }
 
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  line-height: initial;
+}
+
+nav li {
+  float: left;
+  margin: 10px 15px 20px 15px;
+}
+
+nav li a {
+  color: #333;
+}
+
+nav a.active {
+  font-weight: 700;
+}
+
 footer {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 footer ul {
@@ -102,7 +126,7 @@ article.bookmarks ul li {
 
 .code-link a, .code-link a:visited, .contact a, .contact a:visited {
   color: #0355f0;
-  text-decoration: underline;
+  text-decoration: underline dotted;
 }
 
 .contact {
@@ -167,7 +191,7 @@ ol, ul {
   display: inline-block;
   width: 300px;
   vertical-align: top;
-  margin: 100px 50px 80px 50px;
+  margin: 80px 50px 60px 50px;
 }
 
 .tile .description {

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <main>
+    {{ .Content }}
+
+    <ul>
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ range $pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }} / {{ .Date.Format "2 Jan 2006" }}</a></li>
+    {{ end }}
+    </ul>
+  </main>
+{{ end }}

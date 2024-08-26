@@ -4,6 +4,7 @@ date = 2015-02-15T09:30:19+00:00
 codelink = "https://github.com/t-mw/citygen"
 js = ["pixi-1.6.0", "lodash-2.4.1", "react-0.11.1", "city_generation"]
 css = "city_generation"
+url = "city_generation.html"
 +++
 
 Click and hold to navigate. Click on two locations to find a path.
