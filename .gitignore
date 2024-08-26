@@ -2,3 +2,4 @@
 /static/downloads
 /public
 /resources
+.hugo_build.lock
