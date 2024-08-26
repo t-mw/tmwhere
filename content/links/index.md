@@ -1,6 +1,7 @@
 +++
-title = "Bookmarks"
+title = "Links"
 date = 2024-01-12T00:00:00+00:00
+hidetitle = true
 +++
 
 - [Pinscape Build Guide](http://mjrnet.org/pinscape/BuildGuideV2/BuildGuide.php)

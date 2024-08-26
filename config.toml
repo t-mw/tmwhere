@@ -6,10 +6,14 @@ disableHugoGeneratorInject = true
 disableKinds = ["RSS"]
 [menus]
   [[menus.main]]
-    name = 'Projects'
+    name = 'projects'
     pageRef = '/'
     weight = 10
   [[menus.main]]
-    name = 'Posts'
-    pageRef = '/posts'
+    name = 'posts'
+    pageRef = '/posts/'
     weight = 20
+  [[menus.main]]
+    name = 'links'
+    pageRef = '/links/'
+    weight = 30
