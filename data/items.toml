@@ -1,6 +1,17 @@
 [[items]]
+title = "zürindies"
+year = "2018 - present"
+slug = "zurindies"
+images = []
+link1 = "https://www.zurindies.ch/"
+link1_text = "Visit"
+link2 = ""
+link2_text = ""
+description = "Casual indie gamedev meetup in Zürich."
+
+[[items]]
 title = "Illoper"
-year = "2011-present"
+year = "2011 - present"
 slug = "illoper"
 images = []
 link1 = "https://www.soundcloud.com/illoper"
@@ -8,7 +19,6 @@ link1_text = "Listen"
 link2 = ""
 link2_text = ""
 description = "Electronic music project."
-
 
 [[items]]
 title = "Brotato: Abyssal Terrors"
@@ -21,7 +31,6 @@ link2 = ""
 link2_text = ""
 description = "Implementation of local co-op and production of trailer soundtrack."
 tech = "Godot"
-
 
 [[items]]
 title = "Pen People"
