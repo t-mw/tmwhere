@@ -19,13 +19,14 @@ list_items = [
 ]
 
 doc = """+++
-title = "Bookmarks"
+title = "links"
 date = 2024-01-12T00:00:00+00:00
+hidetitle = true
 +++
 
 """ + '\n'.join(list_items)
 
-with open('./content/bookmarks/index.md', 'w') as file:
+with open('./content/links/index.md', 'w') as file:
     file.write(doc)
 
 print("bookmarks generated")
