@@ -59,3 +59,8 @@ In the example above the [separating axis theorem](http://www.metanetsoftware.co
 The A\* algorithm is used for pathfinding. During the generation process, each road segment is associated with those segments which connect directly to either end of it, allowing the network of segments to be traversed.
 
 The movement cost of each segment is the time to travel along it: a function of its length and the maximum allowed speed. Playing around with the pathfinding in the demonstration above, you may notice that the highway segments, which have a higher maximum speed, are preferred over normal road segments. The speed is in turn a function of the capacity of the road i.e. the traffic currently using the road, and although all roads are currently defined as empty, the pathfinder has the ability to avoid busier roads.
+
+## Discussion
+
+- [Hacker News](https://news.ycombinator.com/item?id=9054290)
+- [Reddit](https://www.reddit.com/r/programming/comments/2w0r8h/procedural_city_generation/)
