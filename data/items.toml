@@ -33,6 +33,18 @@ description = "Implementation of local co-op and production of trailer soundtrac
 tech = "Godot"
 
 [[items]]
+title = "3D Dimensions"
+year = "2022"
+slug = "3d-dimensions"
+images = []
+link1 = "https://youtu.be/k4jkhePubQ4?t=1378"
+link1_text = "Video"
+link2 = ""
+link2_text = ""
+description = "Interactive 3D tool developed for the ArcGIS Maps SDK for JavaScript."
+tech = "TypeScript, WebGL"
+
+[[items]]
 title = "Pen People"
 year = "2021"
 slug = "pen-people"
