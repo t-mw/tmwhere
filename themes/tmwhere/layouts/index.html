@@ -3,13 +3,13 @@
     {{ .Content -}}
     {{ $year := 0 -}}
     {{ range $.Site.Data.items.items -}}
+    {{ $page := $.Site.GetPage .slug -}}
+    {{ $thumb := or ($page.Resources.GetMatch "thumb.*") ($page.Resources.GetMatch "1.*") -}}
     <div class="tile">
-      <h2><a href="{{.link1}}">{{ .title }}</a></h2>
+      <h2><a href="{{if .link1 }}{{ .link1 }}{{ else }}{{ $thumb.RelPermalink }}{{ end }}" target="_blank">{{ .title }}</a></h2>
       <h4>{{ if .link2 }}<span class="code-link">&nbsp;[<a href="{{ .link2 }}">{{ .link2_text }}</a>]</span>{{ end }}{{ if .tech }}<span class="tech">{{ .tech }}</span>{{ end }}{{ .year }}</h4>
-      <a class="image" href="{{.link1}}">
+      <a class="image" href="{{if .link1 }}{{ .link1 }}{{ else }}{{ $thumb.RelPermalink }}{{ end }}" target="_blank">
         {{ $title := .title -}}
-        {{ $page := $.Site.GetPage .slug -}}
-        {{ $thumb := or ($page.Resources.GetMatch "thumb.*") ($page.Resources.GetMatch "1.*") -}}
         {{ with $thumb -}}
           {{ $width := 300 -}}
           {{ $height := 200 -}}
