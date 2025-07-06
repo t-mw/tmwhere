@@ -77,7 +77,7 @@ link1 = "https://youtu.be/gnch_gCGe5A?t=63s"
 link1_text = "Video"
 link2 = ""
 link2_text = ""
-description = "Interactive 3D widget developed for the ArcGIS API for JavaScript."
+description = "Interactive 3D tool developed for the ArcGIS API for JavaScript."
 tech = "TypeScript, WebGL"
 
 [[items]]
@@ -89,7 +89,7 @@ link1 = "https://youtu.be/QsqAr4VVpZ0?t=192s"
 link1_text = "Video"
 link2 = ""
 link2_text = ""
-description = "Interactive 3D widget developed for the ArcGIS API for JavaScript."
+description = "Interactive 3D tool developed for the ArcGIS API for JavaScript."
 tech = "TypeScript, WebGL"
 
 [[items]]
